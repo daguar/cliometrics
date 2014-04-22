@@ -92,8 +92,9 @@ describe Cliometrics::CommitSet do
   describe '#commits_by_week' do
     let(:result) { commit_set.commits_by_week }
 
-    it 'returns a hash of the commits by week' do
-      expect(result).to eq({1 => 4})
+    it 'returns an array of the commits by week' do
+      expect(result.length).to eq(53)
+      expect(result[1]).to eq(4)
     end
   end
 end

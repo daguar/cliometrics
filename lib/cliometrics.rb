@@ -40,9 +40,14 @@ module Cliometrics
     end
 
     def commits_by_week
-      array_of_week_indexes = dates.map { |time| time.strftime('%U').to_i }
-      counts = Hash.new(0)
-      array_of_week_indexes.each { |index| counts[index] += 1 }
+      week_of_each_commit = dates.map { |time| time.strftime('%U').to_i }
+      counts = Array.new(53,0)
+      (0..52).each do |week_index_for_csv|
+        commits_for_the_week = week_of_each_commit.select do |value|
+          value == week_index_for_csv
+        end.length
+        counts[week_index_for_csv] = commits_for_the_week
+      end
       counts
     end
   end
