@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/codeforamerica/the_decider/commits?per_page=100&since=2013-01-01T00:00:00%2B00:00&until=2013-12-01T00:00:00%2B00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.beta+json
+      User-Agent:
+      - Octokit Ruby Gem 2.7.2
+      Authorization:
+      - token d00bbad26cc462e6fa0d04763f1b9fed94f3f0c2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 22 Apr 2014 18:52:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1398196370'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Last-Modified:
+      - Fri, 11 Jan 2013 23:26:21 GMT
+      Etag:
+      - '"3216420dfe20b6ef2c4a5c88c39ed0e9"'
+      X-Oauth-Scopes:
+      - public_repo, repo:status
+      X-Accepted-Oauth-Scopes:
+      - ''
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.beta; format=json
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - default-src 'none'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Github-Request-Id:
+      - 324FD096:3B00:1DF1CDB:5356BA82
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Served-By:
+      - a8d8e492d6966f0c23dee2eed64c678a
+    body:
+      encoding: UTF-8
+      string: '[{"sha":"b0b7cd79ce7b7e5fefdd063dae4bf042a7af2b11","commit":{"author":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T23:26:21Z"},"committer":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T23:26:21Z"},"message":"Add
+        more descriptive use case to README","tree":{"sha":"fef19ddeb5f9663bcd0fb50445e2056936fdc83c","url":"https://api.github.com/repos/codeforamerica/the_decider/git/trees/fef19ddeb5f9663bcd0fb50445e2056936fdc83c"},"url":"https://api.github.com/repos/codeforamerica/the_decider/git/commits/b0b7cd79ce7b7e5fefdd063dae4bf042a7af2b11","comment_count":0},"url":"https://api.github.com/repos/codeforamerica/the_decider/commits/b0b7cd79ce7b7e5fefdd063dae4bf042a7af2b11","html_url":"https://github.com/codeforamerica/the_decider/commit/b0b7cd79ce7b7e5fefdd063dae4bf042a7af2b11","comments_url":"https://api.github.com/repos/codeforamerica/the_decider/commits/b0b7cd79ce7b7e5fefdd063dae4bf042a7af2b11/comments","author":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"committer":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"parents":[{"sha":"9415950356976b6a9670b786d7a7b1cbd339ec86","url":"https://api.github.com/repos/codeforamerica/the_decider/commits/9415950356976b6a9670b786d7a7b1cbd339ec86","html_url":"https://github.com/codeforamerica/the_decider/commit/9415950356976b6a9670b786d7a7b1cbd339ec86"}]},{"sha":"9415950356976b6a9670b786d7a7b1cbd339ec86","commit":{"author":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:34:11Z"},"committer":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:34:11Z"},"message":"Fix
+        readme formatting again","tree":{"sha":"5391f57f566e983fcd1aed775f8c3a8cef7f47a4","url":"https://api.github.com/repos/codeforamerica/the_decider/git/trees/5391f57f566e983fcd1aed775f8c3a8cef7f47a4"},"url":"https://api.github.com/repos/codeforamerica/the_decider/git/commits/9415950356976b6a9670b786d7a7b1cbd339ec86","comment_count":0},"url":"https://api.github.com/repos/codeforamerica/the_decider/commits/9415950356976b6a9670b786d7a7b1cbd339ec86","html_url":"https://github.com/codeforamerica/the_decider/commit/9415950356976b6a9670b786d7a7b1cbd339ec86","comments_url":"https://api.github.com/repos/codeforamerica/the_decider/commits/9415950356976b6a9670b786d7a7b1cbd339ec86/comments","author":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"committer":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"parents":[{"sha":"bdf143b73ccb7e413c931c893865b5e543e721e0","url":"https://api.github.com/repos/codeforamerica/the_decider/commits/bdf143b73ccb7e413c931c893865b5e543e721e0","html_url":"https://github.com/codeforamerica/the_decider/commit/bdf143b73ccb7e413c931c893865b5e543e721e0"}]},{"sha":"bdf143b73ccb7e413c931c893865b5e543e721e0","commit":{"author":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:32:59Z"},"committer":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:32:59Z"},"message":"Fix
+        readme formatting","tree":{"sha":"a9877c69b69d5416c2b4072281ac8f83952fdd02","url":"https://api.github.com/repos/codeforamerica/the_decider/git/trees/a9877c69b69d5416c2b4072281ac8f83952fdd02"},"url":"https://api.github.com/repos/codeforamerica/the_decider/git/commits/bdf143b73ccb7e413c931c893865b5e543e721e0","comment_count":0},"url":"https://api.github.com/repos/codeforamerica/the_decider/commits/bdf143b73ccb7e413c931c893865b5e543e721e0","html_url":"https://github.com/codeforamerica/the_decider/commit/bdf143b73ccb7e413c931c893865b5e543e721e0","comments_url":"https://api.github.com/repos/codeforamerica/the_decider/commits/bdf143b73ccb7e413c931c893865b5e543e721e0/comments","author":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"committer":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"parents":[{"sha":"681c265e1082a7ccc6ee31aecd747a319965d272","url":"https://api.github.com/repos/codeforamerica/the_decider/commits/681c265e1082a7ccc6ee31aecd747a319965d272","html_url":"https://github.com/codeforamerica/the_decider/commit/681c265e1082a7ccc6ee31aecd747a319965d272"}]},{"sha":"681c265e1082a7ccc6ee31aecd747a319965d272","commit":{"author":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:25:12Z"},"committer":{"name":"Dave
+        Guarino","email":"daguar@gmail.com","date":"2013-01-11T22:25:12Z"},"message":"First
+        commit","tree":{"sha":"e221b64940bc1f72b0cfc838b607aea28ea0cffd","url":"https://api.github.com/repos/codeforamerica/the_decider/git/trees/e221b64940bc1f72b0cfc838b607aea28ea0cffd"},"url":"https://api.github.com/repos/codeforamerica/the_decider/git/commits/681c265e1082a7ccc6ee31aecd747a319965d272","comment_count":3},"url":"https://api.github.com/repos/codeforamerica/the_decider/commits/681c265e1082a7ccc6ee31aecd747a319965d272","html_url":"https://github.com/codeforamerica/the_decider/commit/681c265e1082a7ccc6ee31aecd747a319965d272","comments_url":"https://api.github.com/repos/codeforamerica/the_decider/commits/681c265e1082a7ccc6ee31aecd747a319965d272/comments","author":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"committer":{"login":"daguar","id":994938,"avatar_url":"https://avatars.githubusercontent.com/u/994938?","gravatar_id":"bdd8cc46ae86e389388ae78dfc45effe","url":"https://api.github.com/users/daguar","html_url":"https://github.com/daguar","followers_url":"https://api.github.com/users/daguar/followers","following_url":"https://api.github.com/users/daguar/following{/other_user}","gists_url":"https://api.github.com/users/daguar/gists{/gist_id}","starred_url":"https://api.github.com/users/daguar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daguar/subscriptions","organizations_url":"https://api.github.com/users/daguar/orgs","repos_url":"https://api.github.com/users/daguar/repos","events_url":"https://api.github.com/users/daguar/events{/privacy}","received_events_url":"https://api.github.com/users/daguar/received_events","type":"User","site_admin":false},"parents":[]}]'
+    http_version: 
+  recorded_at: Tue, 22 Apr 2014 18:52:52 GMT
+recorded_with: VCR 2.9.0
