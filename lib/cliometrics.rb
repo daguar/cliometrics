@@ -34,8 +34,16 @@ module Cliometrics
     end
 
     def dates
-      @dates_array ||= raw_commits_response.map { |raw_commit| raw_commit.commit.author.date }
-      @dates_array
+      raw_commits_response.map do |raw_commit|
+        raw_commit.commit.author.date
+      end
+    end
+
+    def commits_by_week
+      array_of_week_indexes = dates.map { |time| time.strftime('%U').to_i }
+      counts = Hash.new(0)
+      array_of_week_indexes.each { |index| counts[index] += 1 }
+      counts
     end
   end
 end
