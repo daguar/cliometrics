@@ -1,4 +1,4 @@
-require 'cliometrician'
+require 'cliometrics'
 require 'vcr'
 require 'webmock'
 require 'pry'
@@ -8,9 +8,9 @@ VCR.configure do |c|
   c.hook_into :webmock
 end
 
-describe Cliometrician do
+describe Cliometrics::Client do
   it 'exists' do
-    Cliometrician.should_not be_nil
+    Cliometrics::Client.should_not be_nil
   end
 
   describe '#initialize' do
@@ -19,7 +19,7 @@ describe Cliometrician do
 
       it 'instantiates successfully' do
         expect {
-          Cliometrician.new(valid_year)
+          Cliometrics::Client.new(valid_year)
         }.to_not raise_error
       end
     end
@@ -29,7 +29,7 @@ describe Cliometrician do
 
       it "raises with 'Bad year'" do
         expect {
-          Cliometrician.new(invalid_year)
+          Cliometrics::Client.new(invalid_year)
         }.to raise_error(RuntimeError, "Bad year")
       end
     end
@@ -41,14 +41,14 @@ describe Cliometrician do
 
       it 'raises' do
         expect {
-          Cliometrician.new(2013)
+          Cliometrics::Client.new(2013)
         }.to raise_error(RuntimeError)
       end
     end
   end
 
   describe '#get_commits_for' do
-    let(:clio) { Cliometrician.new(2013) }
+    let(:clio) { Cliometrics::Client.new(2013) }
 
     let(:decider_commits) do
       VCR.use_cassette('decider_commits') do
