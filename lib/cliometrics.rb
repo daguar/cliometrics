@@ -25,4 +25,17 @@ module Cliometrics
       return (2011..current_year).include?(fixnum_year)
     end
   end
+
+  class CommitSet
+    attr_reader :raw_commits_response
+
+    def initialize(commits)
+      @raw_commits_response = commits
+    end
+
+    def dates
+      @dates_array ||= raw_commits_response.map { |raw_commit| raw_commit.commit.author.date }
+      @dates_array
+    end
+  end
 end

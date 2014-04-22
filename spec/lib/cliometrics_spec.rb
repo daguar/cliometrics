@@ -61,3 +61,31 @@ describe Cliometrics::Client do
     end
   end
 end
+
+describe Cliometrics::CommitSet do
+  let(:clio) { Cliometrics::Client.new(2013) }
+
+  let(:decider_commits) do
+    VCR.use_cassette('decider_commits') do
+      decider_commits = clio.get_commits_for("the_decider")
+    end
+  end
+
+  let(:commit_set) { Cliometrics::CommitSet.new(decider_commits) }
+
+  describe '#initialize' do
+    it 'sets @raw_commits_response' do
+      expect(commit_set.raw_commits_response).to be_a(Array)
+      expect(commit_set.raw_commits_response.first).to respond_to(:sha)
+    end
+  end
+
+  describe '#dates' do
+    let(:result) { commit_set.dates }
+
+    it 'returns an array of date strings' do
+      expect(result).to be_a(Array)
+      expect(result[0]).to be_a(Time)
+    end
+  end
+end
